@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me SmartHome</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="C:\Users\pc\Desktop\Me\css\all.min">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Sign In</a></li>
+                        <li><button type="submit">Get More</button></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>Smart Home</h2>
+                    <h3>The Future of Your Home </h3>
+                    <p>Sign Up & Get a discount</p>
+                    <button type="button">Sign Up</button>
+                </div>
+                <div class="col-2">
+                    <img src="images/smarthome.png" class="controller">
+                </div>
+            </div>
+            <div class="footer">
+              
+                
+            
+            <!-- footer -->
+            <footer class="flex-rw">
+                
+                <ul class="footer-list-top">
+                  <li>
+                    <h4 class="footer-list-header">Review</h4>
+                    
+                </li>
+                    
+                </ul>
+
+                <ul class="footer-list-top">
+                  <li>
+                    <h4 class="footer-list-header">Blogs</h4></li>           
+                </ul>
+
+                <ul class="footer-list-top">
+                  <li id='help'>
+                    <h4 class="footer-list-header">Contact Us</h4></li>
+                  </ul>
+                
+              </footer>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight =="0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight =="0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+                else
+                {
+                    menuList.style.maxHeight ="0px";
+                }
+            }
+        </script>
+    </body>
+</html>
